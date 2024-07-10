@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICASH.Mlr</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1234175073473138792/1260393425514135603/icon.png.png?ex=668f2859&is=668dd6d9&hm=73f1a3b71a92f2910181980abcce4a772af2fea615b65dd374bf0d4926743dcb&" type="image/png">
+</head>
+<body>
+    <div id="login">
+        <div class="logo-container">
+            <img src="https://cdn.discordapp.com/attachments/1234175073473138792/1260401918904369182/8698ad2f16309019.png?ex=668f3042&is=668ddec2&hm=77f400c6265a3d3e4775af00d51aabed60d5a7309a80df0f4fcfd7536e708cab&" alt="Logo Office" class="logo">
+            <span class="separator">x</span>
+            <img src="https://media.discordapp.net/attachments/1234175073473138792/1260401885857185893/4.png?ex=668f303a&is=668ddeba&hm=ae20c15ccd73aceb2d93473d3670921ee42c4f350ef3557999b40fdde39196af&=&format=webp&quality=lossless&width=834&height=700" alt="Logo Mlr" class="logo">
+        </div>
+        <input type="password" id="password" placeholder=" Hi Saeed Hussin , put your pass code ">
+        <button onclick="checkPassword()">Ok</button>
+        <p class="developed-by">Developed By Mlr 📎</p>
+    </div>
+    <div id="app" style="display:none;">
+        <div class="logowarn">
+            <img src="https://cdn.discordapp.com/attachments/1234175073473138792/1260431244278370385/1.png?ex=668f4b92&is=668dfa12&hm=fe21afc72a430570a53d1f99fa98d56458b5f065403ea0430c18772ba9699c94&" alt="Internet Logo" class="logowarn">
+        </div>
+        <div class="buttons">
+            <button onclick="addAmount(30000)">30,000 د.ع</button>
+            <button onclick="addAmount(35000)">35,000 د.ع</button>
+            <button onclick="addAmount(40000)">40,000 د.ع</button>
+            <button onclick="addAmount(45000)">45,000 د.ع</button>
+            <button onclick="addAmount(50000)">50,000 د.ع</button>
+            <button onclick="addAmount(55000)">55,000 د.ع</button>
+            <button onclick="addAmount(70000)">70,000 د.ع</button>
+            <button onclick="addAmount(75000)">75,000 د.ع</button>
+        </div>
+        <div class="logowarn">
+            <img src="https://cdn.discordapp.com/attachments/1234175073473138792/1260432364929159218/3_2.png?ex=668f4c9d&is=668dfb1d&hm=e3d788cff82d4a07057650813af36f8df35941c8decc79436b834222cf957b17&" alt="Internet Logo" class="logowarn">
+        </div>
+        <div id="output">
+            <p>الـمـتـجـــمــوع: <span id="total" class="total">0</span> د.ع</p>
+            
+            <p>الـمـجـموع بالــدولار: <span id="total-dollar" class="total">0</span> $</p>
+           
+            <p>المـجـموع بالــيورو: <span id="total-euro" class="total">0</span> €</p>
+            
+        
+        </p>  عدد الأشتراكات من الفئات الاتــية 
+            
+            : </p>
+            <ul id="counts">
+                <li>30,000 د.ع: <span id="count30000">0</span></li>
+                <li>35,000 د.ع: <span id="count35000">0</span></li>
+                <li>40,000 د.ع: <span id="count40000">0</span></li>
+                <li>45,000 د.ع: <span id="count45000">0</span></li>
+                <li>50,000 د.ع: <span id="count50000">0</span></li>
+                <li>55,000 د.ع: <span id="count55000">0</span></li>
+                <li>70,000 د.ع: <span id="count70000">0</span></li>
+                <li>75,000 د.ع: <span id="count75000">0</span></li>
+            </ul>
+
+
+
+
+
+            <div id="recent-outputs">
+                <h3>آخر ٣ أشـتراكـات
+                     </h3>
+                <ul id="recent-list"></ul>
+            </div>
+            <p class="copyright">تم الإنشاء في 24.7.9 - جميع الحقوق محفوظة Dev.Mlr</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
